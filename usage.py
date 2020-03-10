@@ -16,7 +16,7 @@ SIDEBAR_STYLE = {
     "top": 0,
     "left": 0,
     "bottom": 0,
-    "width": "16rem",
+    "width": "18rem",
     "padding": "2rem 1rem",
     "background-color": "#f8f9fa",
 }
@@ -31,7 +31,7 @@ sidebar = html.Div(
     style=SIDEBAR_STYLE,
 )
 CONTENT_STYLE = {
-    "margin-left": "18rem",
+    "margin-left": "20rem",
     "margin-right": "2rem",
     "padding": "2rem 1rem",
 }
@@ -45,7 +45,7 @@ content = html.Div([
     html.Div(id='blockie_output', children = rimble.blockie(id='blockie_test')),
     dcc.Input(id='blockie_input',type='text'),
     html.Div(id='ethaddress',children=rimble.ethaddress(address='test',textLabels=True))
-], style = CONTENT_STYLE)
+], style=CONTENT_STYLE)
 
 app.layout = html.Div([sidebar, content])
 
