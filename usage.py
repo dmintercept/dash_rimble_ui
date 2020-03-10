@@ -6,7 +6,9 @@ import dash_core_components as dcc
 
 import dash_bootstrap_components as dbc
 
-app = dash.Dash(__name__)
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+app = dash.Dash(__name__,external_stylesheets=external_stylesheets)
 
 server = app.server
 SIDEBAR_STYLE = {
@@ -20,22 +22,10 @@ SIDEBAR_STYLE = {
 }
 sidebar = html.Div(
     [
-        html.H2("Set Stats", className="display-4"),
+        html.H2("Dash Rimble UI Components", className="display-4"),
         html.Hr(),
         html.P(
-            "Quick Reference for Tracking Set Data", className="lead"
-        ),
-        html.Hr(),
-        html.P(
-            "Other projects",
-        ),
-        dbc.Nav(
-            [
-                dbc.NavLink("Squid Station", href="/page-1", id="page-1-link"),
-                dbc.NavLink("Risk App", href="/page-2", id="page-2-link"),
-            ],
-            vertical=True,
-            pills=True,
+            "Web3 UI Components for python developers", className="lead"
         ),
     ],
     style=SIDEBAR_STYLE,
