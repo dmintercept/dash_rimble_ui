@@ -8,7 +8,7 @@ import dash_bootstrap_components as dbc
 
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 
-app = dash.Dash(__name__,external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 server = app.server
 SIDEBAR_STYLE = {
@@ -16,7 +16,7 @@ SIDEBAR_STYLE = {
     "top": 0,
     "left": 0,
     "bottom": 0,
-    "width": "18rem",
+    "width": "20rem",
     "padding": "2rem 1rem",
     "background-color": "#f8f9fa",
 }
@@ -31,7 +31,7 @@ sidebar = html.Div(
     style=SIDEBAR_STYLE,
 )
 CONTENT_STYLE = {
-    "margin-left": "20rem",
+    "margin-left": "21rem",
     "margin-right": "2rem",
     "padding": "2rem 1rem",
 }
