@@ -6,6 +6,8 @@ import dash_core_components as dcc
 
 app = dash.Dash(__name__)
 
+server = app.server
+
 app.layout = html.Div([
     rimble.card(html.H3('Testing card')
     ),
