@@ -1,0 +1,7 @@
+include rimble/rimble.min.js
+include rimble/rimble.min.js.map
+include rimble/metadata.json
+include rimble/package-info.json
+include README.md
+include LICENSE
+include package.json

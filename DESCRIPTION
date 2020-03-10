@@ -1,0 +1,15 @@
+Package: rimble
+Title: rimbleui elements
+Version: 0.0.1
+Description: rimbleui elements
+Depends: R (>= 3.0.2)
+Imports: 
+Suggests: 
+License: MIT + file LICENSE
+URL: https://github.com/dmintercept/rimble
+BugReports: https://github.com/dmintercept/rimble/issues
+Encoding: UTF-8
+LazyData: true
+KeepSource: true
+Author: steven nevins [aut]
+Maintainer: steven nevins <steven.nevins.js@gmail.com>
